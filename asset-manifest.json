@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/pagina-audibilidade/static/css/main.f10bec58.css",
-    "main.js": "/pagina-audibilidade/static/js/main.0a0dc717.js",
+    "main.css": "/pagina-audibilidade/static/css/main.7aa1f53c.css",
+    "main.js": "/pagina-audibilidade/static/js/main.ae7948a0.js",
     "static/js/787.23da87e8.chunk.js": "/pagina-audibilidade/static/js/787.23da87e8.chunk.js",
     "static/media/logo.svg": "/pagina-audibilidade/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/pagina-audibilidade/index.html",
-    "main.f10bec58.css.map": "/pagina-audibilidade/static/css/main.f10bec58.css.map",
-    "main.0a0dc717.js.map": "/pagina-audibilidade/static/js/main.0a0dc717.js.map",
+    "main.7aa1f53c.css.map": "/pagina-audibilidade/static/css/main.7aa1f53c.css.map",
+    "main.ae7948a0.js.map": "/pagina-audibilidade/static/js/main.ae7948a0.js.map",
     "787.23da87e8.chunk.js.map": "/pagina-audibilidade/static/js/787.23da87e8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f10bec58.css",
-    "static/js/main.0a0dc717.js"
+    "static/css/main.7aa1f53c.css",
+    "static/js/main.ae7948a0.js"
   ]
 }
