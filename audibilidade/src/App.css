@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+h4 {
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: aliceblue;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: calc(100vh - 54px);
+}
