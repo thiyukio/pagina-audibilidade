@@ -4,12 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { useRef } from 'react';
 
-function Button({url, onClick, children}) {
+function Button({url, onClick, children, ...args}) {
   const redirect = () => {
     window.open(url, "_blank");
   }
   return (
-    <button onClick={url ? () => redirect() : onClick}>
+    <button className='button' onClick={url ? () => redirect() : onClick} {...args}>
       {children}
     </button>
   )
@@ -23,7 +23,7 @@ function Header() {
       </h4>
       <Button url={'https://github.com/thiyukio/tcc-pcs-poli-2022-s18'}>
         <FontAwesomeIcon icon={faGithub} />
-        REPO
+        {" REPO"}
       </Button>
     </div>
   )
@@ -33,7 +33,7 @@ function Hero({learnMore}) {
   return (
     <div className='hero-container'>
       <h1>Uma proposta para acessibilidade de deficientes auditivos</h1>
-      <Button onClick={learnMore}> Saiba mais</Button>
+      <Button className='learn-more button' onClick={learnMore}> Saiba mais</Button>
       {/* <img src={logo} className="App-logo" alt="logo" /> */}
     </div>
   )
