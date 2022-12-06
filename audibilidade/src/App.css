@@ -50,6 +50,7 @@ h4 {
 
 .hero-container {
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
   height: calc(100vh - 54px);
