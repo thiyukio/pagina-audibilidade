@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { useRef } from 'react';
@@ -39,6 +39,22 @@ function Hero({learnMore}) {
   )
 }
 
+function Section({title, children, ...args}) {
+  return (
+    <div className='section'>
+        {title && (
+         <h2>
+          {title}
+         </h2>
+        )
+        }
+        <div>
+          {children}
+        </div>
+    </div>
+  )
+}
+
 function App() {
   const firstElementRef = useRef(null);
 
@@ -51,41 +67,10 @@ function App() {
       <Header/>
       <Hero learnMore={scrollToFirst}/>
       <div ref={firstElementRef}>
-        <p>
+        <Section title={"Dados da deficiência auditiva"}>
           Exercitation aliqua laborum mollit esse nulla mollit adipisicing sit fugiat nisi magna ad ipsum quis. Sunt sit ea ullamco laborum. Ad veniam exercitation elit eiusmod proident laborum velit exercitation ad et fugiat. Quis ut nisi laborum irure officia reprehenderit officia pariatur laborum elit velit mollit. Sint labore magna ipsum ea non et quis aliqua veniam. Exercitation qui eu amet qui.
-        </p>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <p>
-          Exercitation aliqua laborum mollit esse nulla mollit adipisicing sit fugiat nisi magna ad ipsum quis. Sunt sit ea ullamco laborum. Ad veniam exercitation elit eiusmod proident laborum velit exercitation ad et fugiat. Quis ut nisi laborum irure officia reprehenderit officia pariatur laborum elit velit mollit. Sint labore magna ipsum ea non et quis aliqua veniam. Exercitation qui eu amet qui.
-        </p>
-        <p>
-          Exercitation aliqua laborum mollit esse nulla mollit adipisicing sit fugiat nisi magna ad ipsum quis. Sunt sit ea ullamco laborum. Ad veniam exercitation elit eiusmod proident laborum velit exercitation ad et fugiat. Quis ut nisi laborum irure officia reprehenderit officia pariatur laborum elit velit mollit. Sint labore magna ipsum ea non et quis aliqua veniam. Exercitation qui eu amet qui.
-        </p>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+        </Section>
+        
       </div>
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
