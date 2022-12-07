@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/pagina-audibilidade/static/css/main.674fb395.css",
-    "main.js": "/pagina-audibilidade/static/js/main.491a63db.js",
+    "main.css": "/pagina-audibilidade/static/css/main.3b66046b.css",
+    "main.js": "/pagina-audibilidade/static/js/main.8b466a43.js",
     "static/js/787.23da87e8.chunk.js": "/pagina-audibilidade/static/js/787.23da87e8.chunk.js",
+    "static/media/PerdaIdades.png": "/pagina-audibilidade/static/media/PerdaIdades.37fd7a828253b6779c05.png",
     "static/media/logo.svg": "/pagina-audibilidade/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/pagina-audibilidade/index.html",
-    "main.674fb395.css.map": "/pagina-audibilidade/static/css/main.674fb395.css.map",
-    "main.491a63db.js.map": "/pagina-audibilidade/static/js/main.491a63db.js.map",
+    "main.3b66046b.css.map": "/pagina-audibilidade/static/css/main.3b66046b.css.map",
+    "main.8b466a43.js.map": "/pagina-audibilidade/static/js/main.8b466a43.js.map",
     "787.23da87e8.chunk.js.map": "/pagina-audibilidade/static/js/787.23da87e8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.674fb395.css",
-    "static/js/main.491a63db.js"
+    "static/css/main.3b66046b.css",
+    "static/js/main.8b466a43.js"
   ]
 }
