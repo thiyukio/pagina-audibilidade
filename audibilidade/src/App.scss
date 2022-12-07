@@ -7,16 +7,25 @@
 
 .App {
   background-color: #252422;
+  padding-bottom: 10rem;
 }
 
 h4 {
   margin: 0;
 }
 
+p {
+  font-size: 1.1rem;
+}
+
 .button {
   cursor: pointer;
   border: none;
   background-color: transparent;
+}
+
+.large-button {
+  font-size: x-large;
 }
 
 .header {
@@ -30,6 +39,9 @@ h4 {
 }
 
 .hero-container {
+  background: rgb(37,36,34);
+  background: linear-gradient(0deg, rgba(37,36,34,1) 0%, rgba(64,61,57,1) 100%);
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -53,12 +65,17 @@ h4 {
 .section {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 10rem;
 
   img {
-    max-width: 30vw;
+    width: 20rem;
+    object-fit: contain;
+    margin: 2rem;
   }
 
   .text-block {
-    max-width: 40vw;
+    margin: 2rem;
+    width: 40rem;
   }
 }
