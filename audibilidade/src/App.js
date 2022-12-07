@@ -39,16 +39,16 @@ function Hero({learnMore}) {
   )
 }
 
-function Section({title, children, ...args}) {
+function Section({title, image, children, ...args}) {
   return (
     <div className='section'>
-        {title && (
-         <h2>
-          {title}
-         </h2>
-        )
-        }
-        <div>
+        <img src={image} alt=''/>
+        <div className='text-block'>
+          {title && (
+          <h2>
+            {title}
+          </h2>
+          )}
           {children}
         </div>
     </div>
@@ -59,19 +59,33 @@ function App() {
   const firstElementRef = useRef(null);
 
   const scrollToFirst = () => {
-    firstElementRef.current.scrollIntoView();
+    firstElementRef.current.scrollIntoView({block: "start", behavior: "smooth"});
   }
 
   return (
     <div className="App">
       <Header/>
       <Hero learnMore={scrollToFirst}/>
-      <div ref={firstElementRef}>
-        <Section title={"Dados da deficiência auditiva"}>
+      <div ref={firstElementRef} className='first-element'>
+      <Section title={"Dados da deficiência auditiva"} image={logo}>
           Exercitation aliqua laborum mollit esse nulla mollit adipisicing sit fugiat nisi magna ad ipsum quis. Sunt sit ea ullamco laborum. Ad veniam exercitation elit eiusmod proident laborum velit exercitation ad et fugiat. Quis ut nisi laborum irure officia reprehenderit officia pariatur laborum elit velit mollit. Sint labore magna ipsum ea non et quis aliqua veniam. Exercitation qui eu amet qui.
         </Section>
-        
       </div>
+        <Section title={"Dados da deficiência auditiva"} image={logo}>
+          Exercitation aliqua laborum mollit esse nulla mollit adipisicing sit fugiat nisi magna ad ipsum quis. Sunt sit ea ullamco laborum. Ad veniam exercitation elit eiusmod proident laborum velit exercitation ad et fugiat. Quis ut nisi laborum irure officia reprehenderit officia pariatur laborum elit velit mollit. Sint labore magna ipsum ea non et quis aliqua veniam. Exercitation qui eu amet qui.
+        </Section>
+        <Section title={"Dados da deficiência auditiva"} image={logo}>
+          Exercitation aliqua laborum mollit esse nulla mollit adipisicing sit fugiat nisi magna ad ipsum quis. Sunt sit ea ullamco laborum. Ad veniam exercitation elit eiusmod proident laborum velit exercitation ad et fugiat. Quis ut nisi laborum irure officia reprehenderit officia pariatur laborum elit velit mollit. Sint labore magna ipsum ea non et quis aliqua veniam. Exercitation qui eu amet qui.
+        </Section>
+        <Section title={"Dados da deficiência auditiva"} image={logo}>
+          Exercitation aliqua laborum mollit esse nulla mollit adipisicing sit fugiat nisi magna ad ipsum quis. Sunt sit ea ullamco laborum. Ad veniam exercitation elit eiusmod proident laborum velit exercitation ad et fugiat. Quis ut nisi laborum irure officia reprehenderit officia pariatur laborum elit velit mollit. Sint labore magna ipsum ea non et quis aliqua veniam. Exercitation qui eu amet qui.
+        </Section>
+        <Section title={"Dados da deficiência auditiva"} image={logo}>
+          Exercitation aliqua laborum mollit esse nulla mollit adipisicing sit fugiat nisi magna ad ipsum quis. Sunt sit ea ullamco laborum. Ad veniam exercitation elit eiusmod proident laborum velit exercitation ad et fugiat. Quis ut nisi laborum irure officia reprehenderit officia pariatur laborum elit velit mollit. Sint labore magna ipsum ea non et quis aliqua veniam. Exercitation qui eu amet qui.
+        </Section>
+        <Section title={"Dados da deficiência auditiva"} image={logo}>
+          Exercitation aliqua laborum mollit esse nulla mollit adipisicing sit fugiat nisi magna ad ipsum quis. Sunt sit ea ullamco laborum. Ad veniam exercitation elit eiusmod proident laborum velit exercitation ad et fugiat. Quis ut nisi laborum irure officia reprehenderit officia pariatur laborum elit velit mollit. Sint labore magna ipsum ea non et quis aliqua veniam. Exercitation qui eu amet qui.
+        </Section>
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

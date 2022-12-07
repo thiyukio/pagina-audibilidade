@@ -8,6 +8,7 @@
 .App {
   background-color: #252422;
 }
+
 h4 {
   margin: 0;
 }
@@ -33,7 +34,7 @@ h4 {
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  height: calc(100vh);
+  height: 100vh;
 }
 
 .learn-more {
@@ -45,7 +46,19 @@ h4 {
   color: #EB5E28;
 }
 
-.section {
-  width: 60vw;
+.first-element {
+  scroll-margin-top: 51px;
+}
 
+.section {
+  display: flex;
+  justify-content: center;
+
+  img {
+    max-width: 30vw;
+  }
+
+  .text-block {
+    max-width: 40vw;
+  }
 }
